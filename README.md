@@ -1,27 +1,86 @@
-# VehicleOverviewApp
+<a name="readme-top"></a>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.
+<!-- PROJECT DESCRIPTION -->
 
-## Development server
+# 📖 Vehicle Overview App project <a name="about-project"></a>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🛠 Built With <a name="built-with"></a>
 
-## Code scaffolding
+- CSS
+- JavaScript
+- HTML
+- Angular
+- PrimeNG
+- RxJs
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<!-- LIVE DEMO -->
 
-## Build
+## 🚀 Live Demo <a name="live-demo"></a>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+> This is live demo to play around:
 
-## Running unit tests
+- [Live Demo Link](https://master--rococo-kitten-c8727e.netlify.app)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Running end-to-end tests
+<!-- LIVE DEMO -->
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🚀 Video Present <a name="live-demo"></a>
 
-## Further help
+- [Video Link](https://www.loom.com/share/a3333549506640b493ca8ca7ef22d75b?sid=ec5081a1-8136-483e-9868-6b82c9f05221)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+  git clone git@github.com:Fsher07/simple-ecommerce.git
+```
+
+### Install
+
+Install this project with:
+
+```sh
+  npm install
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  ng serve
+```
+
+### Run tests
+
+To run tests, run the following command:
+
+```sh
+  ng test
+```
+
+<!-- AUTHORS -->
+
+## 👥 Author <a name="authors"></a>
+
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/fsalimhidir/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features (if there was more time) <a name="future-features"></a>
+
+- [ ] **visual improvements**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
