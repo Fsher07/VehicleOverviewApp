@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { VehicleService } from '../core/vehicle/vehicle.service';
 import { VehicleModel } from '../core/vehicle/vehicle.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-vehicle-overview',
@@ -12,7 +13,7 @@ export class VehicleOverviewComponent {
   errorMessage: string | null = null;
   loading = false;
 
-  constructor(private vehicleService: VehicleService) {}
+  constructor(private vehicleService: VehicleService, private router: Router) {}
 
   filteredVehicles: VehicleModel[] = [];
 
@@ -42,5 +43,9 @@ export class VehicleOverviewComponent {
         vehicle.color.toLowerCase().includes(searchValue)
       );
     });
+  }
+
+  onSignOut(): void {
+    this.router.navigate(['/sign-in']);
   }
 }
