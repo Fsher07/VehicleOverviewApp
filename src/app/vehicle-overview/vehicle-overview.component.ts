@@ -38,7 +38,7 @@ export class VehicleOverviewComponent {
     this.filteredVehicles = this.vehicles.filter((vehicle) => {
       return (
         vehicle.name.toLowerCase().includes(searchValue) ||
-        vehicle.model.toLowerCase().includes(searchValue) ||
+        vehicle.price.toString().includes(searchValue) ||
         vehicle.color.toLowerCase().includes(searchValue)
       );
     });
