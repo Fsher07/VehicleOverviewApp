@@ -29,7 +29,7 @@
         </thead>
         <tbody>
           <tr *ngFor="let vehicle of filteredVehicles">
-            <td>{{ vehicle.name | carName }}</td>
+            <td>{{ vehicle.name | VehicleNamePipe }}</td>
             <td>{{ vehicle.price }}</td>
             <td>{{ vehicle.mileage }}</td>
             <td>{{ vehicle.color }}</td>
