@@ -8,14 +8,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { VehicleOverviewComponent } from './vehicle-overview/vehicle-overview.component';
-import { VehicleNamePipePipe } from './pipes/vehicle-name-pipe.pipe';
+import { VehicleNamePipe } from './pipes/vehicle-name-pipe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignInComponent,
     VehicleOverviewComponent,
-    VehicleNamePipePipe,
+    VehicleNamePipe,
   ],
   imports: [
     BrowserModule,
