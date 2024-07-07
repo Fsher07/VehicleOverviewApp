@@ -1,0 +1,51 @@
+<div class="sign-in-container">
+  <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+    <h2>Sign In</h2>
+    <div class="input-container">
+      <input
+        type="text"
+        class="p-inputtext-lg textin"
+        formControlName="username"
+        placeholder="Username"
+        pInputText
+        required
+      />
+      <small
+        class="p-error warningText"
+        *ngIf="signInForm.get('username')?.errors?.['required'] && signInForm.get('username')?.touched"
+        >Username is required</small
+      >
+    </div>
+    <div class="input-container">
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Password"
+        formControlName="password"
+        class="p-inputtext-lg"
+        pInputText
+        required
+      />
+      <div *ngIf="password?.invalid && password?.touched" class="p-error">
+        <small
+          class="p-error warningText"
+          *ngIf="signInForm.get('password')?.errors?.['invalid']"
+          >Password must be at least 8 characters long, contain at least one
+          uppercase letter, one number, and one special character</small
+        >
+        <small
+          class="p-error warningText"
+          *ngIf="signInForm.get('password')?.errors?.['required']"
+          >Password is required</small
+        >
+      </div>
+    </div>
+    <p-button
+      class="submit-button"
+      label="Submit"
+      type="submit"
+      [disabled]="signInForm.invalid"
+    ></p-button>
+  </form>
+</div>

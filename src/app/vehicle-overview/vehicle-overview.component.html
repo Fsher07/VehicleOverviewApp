@@ -1,0 +1,43 @@
+<div class="vehicle-overview-container">
+  <h1>Vehicle Overview</h1>
+  <div *ngIf="loading" class="loading">Loading...</div>
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+  <div *ngIf="!loading && !errorMessage">
+    <span class="p-input-icon-right">
+      <i class="pi pi-search"></i>
+      <input
+        type="text"
+        placeholder="Search..."
+        (input)="onSearch($event)"
+        class="search-input"
+        pInputText
+      />
+    </span>
+    <table>
+      <thead>
+        <tr>
+          <th>Car Name</th>
+          <th>Price</th>
+          <th>Mileage</th>
+          <th>Color</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let vehicle of filteredVehicles">
+          <td>{{ vehicle.name | carName }}</td>
+          <td>{{ vehicle.price }}</td>
+          <td>{{ vehicle.mileage }}</td>
+          <td>{{ vehicle.color }}</td>
+          <td>
+            <i
+              [ngClass]="
+                vehicle.active ? 'pi pi-play-circle' : 'pi pi-pause-circle'
+              "
+            ></i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
