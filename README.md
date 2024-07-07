@@ -7,7 +7,7 @@
 ## 🛠 Built With <a name="built-with"></a>
 
 - CSS
-- JavaScript
+- TypeScript
 - HTML
 - Angular
 - PrimeNG
