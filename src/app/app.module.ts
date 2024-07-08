@@ -9,6 +9,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { VehicleOverviewComponent } from './vehicle-overview/vehicle-overview.component';
 import { VehicleNamePipe } from './pipes/vehicle-name-pipe.pipe';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { VehicleNamePipe } from './pipes/vehicle-name-pipe.pipe';
     SignInComponent,
     VehicleOverviewComponent,
     VehicleNamePipe,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

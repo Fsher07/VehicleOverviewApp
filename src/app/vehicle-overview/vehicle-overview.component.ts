@@ -44,8 +44,4 @@ export class VehicleOverviewComponent {
       );
     });
   }
-
-  onSignOut(): void {
-    this.router.navigate(['/sign-in']);
-  }
 }
