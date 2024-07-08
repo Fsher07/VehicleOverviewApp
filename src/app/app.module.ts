@@ -10,6 +10,7 @@ import { ButtonModule } from 'primeng/button';
 import { VehicleOverviewComponent } from './vehicle-overview/vehicle-overview.component';
 import { VehicleNamePipe } from './pipes/vehicle-name-pipe.pipe';
 import { HeaderComponent } from './header/header.component';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { HeaderComponent } from './header/header.component';
     ReactiveFormsModule,
     InputTextModule,
     ButtonModule,
+    TableModule,
   ],
   providers: [VehicleService],
   bootstrap: [AppComponent],

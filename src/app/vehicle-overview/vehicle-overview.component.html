@@ -14,8 +14,8 @@
           pInputText
         />
       </span>
-      <table>
-        <thead>
+      <p-table [value]="filteredVehicles">
+        <ng-template pTemplate="header">
           <tr>
             <th>Car Name</th>
             <th>Price</th>
@@ -23,9 +23,9 @@
             <th>Color</th>
             <th>Status</th>
           </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let vehicle of filteredVehicles">
+        </ng-template>
+        <ng-template pTemplate="body" let-vehicle>
+          <tr>
             <td>{{ vehicle.name | VehicleNamePipe }}</td>
             <td>{{ vehicle.price }}</td>
             <td>{{ vehicle.mileage }}</td>
@@ -38,8 +38,8 @@
               ></i>
             </td>
           </tr>
-        </tbody>
-      </table>
+        </ng-template>
+      </p-table>
     </div>
   </div>
 </div>
