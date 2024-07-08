@@ -19,7 +19,7 @@
 
 > This is live demo to play around:
 
-- [Live Demo Link](https://master--rococo-kitten-c8727e.netlify.app/sign-in)
+- [Live Demo Link](https://master--rococo-kitten-c8727e.netlify.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
